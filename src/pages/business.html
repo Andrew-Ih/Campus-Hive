@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business page</title>
+    <link rel="stylesheet" href="../styles/business.css">
+</head>
+<body>
+    <!-- <header>
+        <div class="logo">Campus Market</div>
+        <input type="text" placeholder="Search for anything..." class="search-bar">
+        <nav>
+            <ul>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Gifts</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Sign In</a></li>
+            </ul>
+        </nav>
+    </header> -->
+
+    <header>
+        <h1>Campus Hive</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="banner">
+        <div class="seller-info">
+            <img src="profile.jpg" alt="Seller Profile" class="profile-pic">
+            <div class="seller-details">
+                <h1>Shop Name</h1>
+                <p>Magical Campus Products</p>
+                <span class="rating">★★★★★ 4.8</span>
+                <button class="follow-btn">Follow Shop</button>
+            </div>
+        </div>
+    </section>
+    
+    <main>
+        <aside class="sidebar">
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="#">All Items</a></li>
+                <li><a href="#">Handmade</a></li>
+                <li><a href="#">Books</a></li>
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Electronics</a></li>
+            </ul>
+        </aside>
+        
+        <section class="products">
+            <h2>Featured Items</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="product1.jpg" alt="Product 1">
+                    <p>Custom Notebook</p>
+                    <span class="price">$15.00</span>
+                </div>
+                <div class="product">
+                    <img src="product2.jpg" alt="Product 2">
+                    <p>Campus Hoodie</p>
+                    <span class="price">$35.00</span>
+                </div>
+                <div class="product">
+                    <img src="product3.jpg" alt="Product 3">
+                    <p>Handmade Jewelry</p>
+                    <span class="price">$25.00</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.querySelector('.search-bar').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                alert('Search functionality coming soon!');
+            }
+        });
+    </script>
+</body>
+</html>
