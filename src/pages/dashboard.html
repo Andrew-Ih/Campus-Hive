@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classifieds Dashboard</title>
     <link rel="stylesheet" href="../styles/dashboard.css">
+    <script src="../script/dashboard.js"></script>
 </head>
 <body>
     <header>
@@ -20,9 +21,18 @@
     
     <div class="slider-container">
         <div class="slider">
-            <div class="slide"><img src="https://via.placeholder.com/800x300" alt="Campus Hive Introduction"></div>
-            <div class="slide"><img src="https://via.placeholder.com/800x300" alt="Buy and Sell on Campus Hive"></div>
-            <div class="slide"><img src="https://via.placeholder.com/800x300" alt="Find Housing and Services"></div>
+            <div class="slide">
+                <img src="../img/dashBoardImages/hive.jpg" alt="Campus Hive Introduction">
+                <div class="slide-text">Welcome to Campus Hive - Your Marketplace for Students!</div>
+            </div>
+            <div class="slide">
+                <img src="../img/dashBoardImages/group-three-young-good-looking-startupers-sitting-light-coworking-space-talking-about-future-project-looking-through-design-examples-digital-tablet-friends-smiling-talking-about-work.jpg" alt="Buy and Sell on Campus Hive">
+                <div class="slide-text">Buy and Sell Items Easily with Fellow Students</div>
+            </div>
+            <div class="slide">
+                <img src="../img/dashBoardImages/29853.jpg" alt="Find Housing and Services">
+                <div class="slide-text">Find Affordable Housing and Student Services</div>
+            </div>
         </div>
         <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
         <button class="next" onclick="moveSlide(1)">&#10095;</button>
@@ -58,20 +68,6 @@
         </div>
     </div>
 
-    <script>
-        let currentIndex = 0;
-        function moveSlide(direction) {
-            const slides = document.querySelectorAll(".slide");
-            slides[currentIndex].style.display = "none";
-            currentIndex = (currentIndex + direction + slides.length) % slides.length;
-            slides[currentIndex].style.display = "block";
-        }
-        document.addEventListener("DOMContentLoaded", () => {
-            const slides = document.querySelectorAll(".slide");
-            slides.forEach((slide, index) => {
-                slide.style.display = index === 0 ? "block" : "none";
-            });
-        });
-    </script>
+    
 </body>
 </html>
