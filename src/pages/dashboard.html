@@ -17,6 +17,17 @@
             </ul>
         </nav>
     </header>
+    
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide"><img src="https://via.placeholder.com/800x300" alt="Campus Hive Introduction"></div>
+            <div class="slide"><img src="https://via.placeholder.com/800x300" alt="Buy and Sell on Campus Hive"></div>
+            <div class="slide"><img src="https://via.placeholder.com/800x300" alt="Find Housing and Services"></div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    
     <div class="dashboard-container">
         <div class="search-bar">
             <input type="text" placeholder="Search Items...">
@@ -46,7 +57,21 @@
             </div>
         </div>
     </div>
+
+    <script>
+        let currentIndex = 0;
+        function moveSlide(direction) {
+            const slides = document.querySelectorAll(".slide");
+            slides[currentIndex].style.display = "none";
+            currentIndex = (currentIndex + direction + slides.length) % slides.length;
+            slides[currentIndex].style.display = "block";
+        }
+        document.addEventListener("DOMContentLoaded", () => {
+            const slides = document.querySelectorAll(".slide");
+            slides.forEach((slide, index) => {
+                slide.style.display = index === 0 ? "block" : "none";
+            });
+        });
+    </script>
 </body>
 </html>
-
-
