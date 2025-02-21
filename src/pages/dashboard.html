@@ -3,21 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Classifieds Dashboard</title>
     <link rel="stylesheet" href="../styles/dashboard.css">
 </head>
 <body>
     <header>
-        <h1>Welcome, User!</h1>
+        <h1>Campus Hive</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <!-- <li><a href="#">Post Ad</a></li> -->
+                <!-- <li><a href="#">My Ads</a></li> -->
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
     </header>
-    <section class="categories">
-        <h2>Categories</h2>
-        <ul>
-            <li><a href="categories.html">Textbooks</a></li>
-            <li><a href="categories.html">Clothing</a></li>
-            <li><a href="categories.html">Furniture</a></li>
-            <li><a href="categories.html">Electronics</a></li>
-        </ul>
-    </section>
+    <div class="dashboard-container">
+
+        <div class="dashboard-container">
+            <h2 class="welcome-message">Welcome, User!</h2>
+            <div class="search-bar">
+                <input type="text" placeholder="Search classifieds...">
+                <button>Search</button>
+            </div>
+            <div class="dashboard-grid">
+                <div class="dashboard-card">
+                    <div class="icon-circle">💬</div>
+                    <p>Messages</p>
+                </div>
+                <div class="dashboard-card">
+                    <div class="icon-circle">⭐</div>
+                    <p>Saved Ads</p>
+                </div>
+                <div class="dashboard-card">
+                    <div class="icon-circle">📋</div>
+                    <p>Manage Ads</p>
+                </div>
+                <div class="dashboard-card">
+                    <div class="icon-circle">⚙️</div>
+                    <p>Settings</p>
+                </div>
+            </div>
+    </div>
 </body>
 </html>
