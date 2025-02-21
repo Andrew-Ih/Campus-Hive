@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.categories ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categories li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.categories a {
+    text-decoration: none;
+    background: #007BFF;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}

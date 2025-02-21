@@ -1,0 +1,9 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.listing img {
+    width: 150px;
+    height: 150px;
+}
