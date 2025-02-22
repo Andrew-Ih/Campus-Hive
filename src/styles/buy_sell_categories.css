@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #171717;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px 0 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.welcome-message {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+    margin-top: 80px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.dashboard-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background-color: #fcfdfe0c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.category-icon {
+    width: 60px; /* Adjust based on your image size */
+    height: 60px; /* Adjust based on your image size */
+    object-fit: contain; /* Ensures the image fits well */
+}
+
+.dashboard-card span {
+    font-size: 18px;
+    font-weight: bold;
+}
