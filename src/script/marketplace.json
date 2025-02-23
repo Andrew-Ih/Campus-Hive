@@ -1,0 +1,5 @@
+[
+    { "id": 1, "name": "MacBook Air", "category": "Electronics", "price": 800, "seller": "Alice", "contact": "alice@email.com" },
+    { "id": 2, "name": "Calculus Textbook", "category": "Books", "price": 50, "seller": "Bob", "contact": "bob@email.com" },
+    { "id": 3, "name": "Mountain Bike", "category": "Sports", "price": 200, "seller": "Charlie", "contact": "charlie@email.com" }
+]
