@@ -131,6 +131,9 @@
                     "tell me a joke": "Why did the smartphone go to therapy? It lost all its connections! 😂",
                     "what's the weather like": "I'm not a weather bot, but I can help you find great deals!",
                     "do you like shopping": "I love helping people find the best deals!",
+                    "not funny":"I will kill you ",
+                    "bruh":"what ? You think cause im an AI you can say whatever huh",
+                    "it ain't like that og":"You think say i dey play abi?",
                     "are you smarter than siri": "I focus on campus deals, so I’m the best at that! 😉",
                     "where can i find a part-time job": "Check student job boards or campus announcements!",
                     "what's the most popular item": "Laptops and textbooks are always in high demand!",
@@ -198,11 +201,11 @@
                 if (msg === "") return;
         
                 let reply;
-                if (msg.includes("sell") || msg.includes("list item")) {
-                    reply = "📝 To sell an item, provide: Name, Category, Price, and Contact info.";
-                } else {
+                // if (msg.includes("sell") || msg.includes("list item")) {
+                //     reply = "📝 To sell an item, provide: Name, Category, Price, and Contact info.";
+                // } else {
                     reply = searchMarketplace(msg);
-                }
+                // }
         
                 chatHistory.innerHTML += `<p><strong>You:</strong> ${msg}</p>`;
                 chatHistory.innerHTML += `<p><strong>Bot:</strong> ${reply}</p>`;
